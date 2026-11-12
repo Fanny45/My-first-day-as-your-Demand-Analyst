@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estefanía Gómez: my first day as your Demand Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eaf1ef;--card:#f8fbfa;--ink:#10302f;--mute:#4d6865;--line:#c6d6d2;--agave:#2b7a86;--amber:#d9962b;--warn:#b5521f;--soft:#dbe8e5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a1a;--card:#14262626;--card:#142626;--ink:#e3efec;--mute:#9db8b3;--line:#27403f;--agave:#6cc3cf;--amber:#f0b24a;--warn:#f08a5a;--soft:#1b3433;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1a1a;--card:#142626;--ink:#e3efec;--mute:#9db8b3;--line:#27403f;--agave:#6cc3cf;--amber:#f0b24a;--warn:#f08a5a;--soft:#1b3433;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1040px;margin:0 auto;padding:2.5rem 1.25rem 3rem}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+h1{font-size:clamp(2.2rem,6vw,3.9rem);font-weight:700;letter-spacing:-.02em;max-width:15ch}
+h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:700;margin-bottom:.4rem}
+h3{font-size:1.05rem;font-weight:700;margin-bottom:.25rem}
+p{margin:.3rem 0}
+.lead{font-size:1.1rem;color:var(--mute);max-width:60ch;margin-top:1rem}
+.note{font-size:.88rem;color:var(--mute)}
+section{margin-top:3.5rem}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.25rem}
+.grid{display:grid;gap:1.25rem;grid-template-columns:1fr}
+@media(min-width:820px){.grid.two{grid-template-columns:1fr 1fr}.grid.brief{grid-template-columns:1fr 1.9fr}}
+.brief ol{margin:.6rem 0 0;padding-left:1.2rem}.brief li{margin:.5rem 0}
+.tag{display:inline-block;font-size:.8rem;background:var(--soft);border-radius:99px;padding:.05rem .6rem;margin-left:.3rem}
+.ctrl{display:grid;gap:.9rem;grid-template-columns:1fr;margin:1rem 0}
+@media(min-width:700px){.ctrl{grid-template-columns:repeat(3,1fr)}}
+label{display:block;font-weight:500;font-size:.92rem}
+label b{float:right;color:var(--agave)}
+input[type=range]{width:100%;accent-color:var(--agave)}
+.chart{width:100%;height:auto;display:block}
+.chart text{fill:var(--mute);font-size:11px;font-family:inherit}
+.bar{fill:var(--agave)}.bar.gap{fill:var(--warn)}.cap{stroke:var(--amber);stroke-width:2.5;stroke-dasharray:6 4;fill:none}.base{fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:.3rem 1.1rem;font-size:.85rem;color:var(--mute)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin:.9rem 0}
+.kpis div{background:var(--soft);border-radius:10px;padding:.6rem .8rem}
+.kpis strong{display:block;font:700 1.5rem/1.1 "Bricolage Grotesque",sans-serif}
+.kpis span{font-size:.82rem;color:var(--mute)}
+.alert{border-left:4px solid var(--amber);background:var(--soft);padding:.7rem .9rem;border-radius:0 10px 10px 0;margin:0}
+.duo{display:grid;gap:1.25rem}
+@media(min-width:760px){.duo{grid-template-columns:1fr 1fr}}
+.who{display:flex;gap:1rem;align-items:center;margin-bottom:.6rem}
+.who svg{width:112px;height:112px;flex:none;border-radius:50%}
+.duo ul{margin:.3rem 0 0;padding-left:1.1rem}.duo li{margin:.3rem 0}
+.values{display:grid;gap:.75rem;margin-top:1rem}
+@media(min-width:760px){.values{grid-template-columns:repeat(3,1fr)}}
+.steps{list-style:none;padding:0;margin:1.2rem 0 0;display:grid;gap:0;border-left:3px solid var(--agave)}
+.steps li{padding:.2rem 0 1.1rem 1.2rem;position:relative}
+.steps li::before{content:counter(s);counter-increment:s;position:absolute;left:-1.05rem;top:.1rem;width:1.7rem;height:1.7rem;border-radius:50%;background:var(--agave);color:var(--bg);font-weight:700;font-size:.85rem;display:grid;place-items:center}
+.steps{counter-reset:s}
+.steps .ag{display:block;font-size:.92rem;color:var(--mute)}
+dl{margin:1rem 0 0;display:grid;gap:.2rem 1.5rem;grid-template-columns:1fr}
+@media(min-width:760px){dl{grid-template-columns:13rem 1fr}dt{padding:.5rem 0}dd{padding:.5rem 0}}
+dt{font-weight:700;margin-top:.8rem}dd{margin:0;border-bottom:1px solid var(--line);padding-bottom:.5rem}
+a{color:var(--agave)}
+footer{margin-top:3.5rem;border-top:1px solid var(--line);padding-top:1.2rem}
+@media(prefers-reduced-motion:no-preference){.bar{transition:height .25s,y .25s}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>My first day as your Demand Analyst</h1>
+<p class="lead">Estefanía Gómez, applying to Becle, S.A.B. de C.V. This is a small working sketch of how I’d pair with an AI agent: a living dashboard, a scenario twin and a daily brief. Everything below uses synthetic data, so move the sliders.</p>
+</header>
+
+<section aria-labelledby="live">
+<div class="grid brief">
+<div class="panel brief">
+<h2 id="brief" style="font-size:1.3rem">Brief from my chief of staff</h2>
+<p class="note">Sample for day 1, 7:30 a.m.</p>
+<ol>
+<li>Review forecast error by brand family and flag the three weakest market-SKU pairs.</li>
+<li>Check the Q4 promo calendar with Commercial and Supply before the planning cycle closes.</li>
+<li>Run the supplier-delay scenario in the twin and write a five-line decision note.</li>
+</ol>
+<p class="note" style="margin-top:.8rem">Agent prepared: data refreshed overnight, two anomalies detected.</p>
+</div>
+<div class="panel">
+<h2 id="live">Live demand twin</h2>
+<p class="note">Monthly demand in thousands of cases, illustrative. Change the plan and watch the supply gap move.</p>
+<div class="ctrl">
+<div><label for="p">Promo lift (May, Oct, Nov)<b id="pv"></b></label><input id="p" type="range" min="0" max="25" value="8"></div>
+<div><label for="h">Holiday strength (Nov, Dec)<b id="hv"></b></label><input id="h" type="range" min="-15" max="25" value="0"></div>
+<div><label for="d">Supplier delay, supply lost from Sep<b id="dv"></b></label><input id="d" type="range" min="0" max="30" value="12"></div>
+</div>
+<svg id="chart" class="chart" viewBox="0 0 640 250" role="img" aria-label="Monthly demand against supply capacity"></svg>
+<div class="legend"><span>Green bars: demand covered</span><span>Orange bars: demand above supply</span><span>Dashed line: supply plan</span><span>Dots: baseline forecast</span></div>
+<div class="kpis"><div><strong id="k1"></strong><span>Total demand, k cases</span></div><div><strong id="k2"></strong><span>Volume at risk, k cases</span></div><div><strong id="k3"></strong><span>Fill rate</span></div></div>
+<p class="alert" id="msg" aria-live="polite"></p>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="duo">
+<h2 id="duo">Me + my agent</h2>
+<p class="lead" style="margin-top:.2rem">One role, two partners. The agent covers the repeatable work so I can spend my time on judgment, negotiation and people.</p>
+<div class="duo" style="margin-top:1.2rem">
+<div class="panel">
+<div class="who">
+<svg viewBox="0 0 200 200" role="img" aria-label="Illustration of Estefanía: curly dark shoulder-length hair, round tortoiseshell glasses, a big smile and a beige sweatshirt">
+<rect width="200" height="200" fill="#5f686b"/><rect width="34" height="200" fill="#a9adaf"/><rect x="14" width="8" height="200" fill="#c4c7c8"/>
+<path d="M30 200 Q40 152 100 150 Q166 152 176 200Z" fill="#e5d8c0"/><path d="M78 152 Q100 168 124 152" fill="none" stroke="#cdbd9f" stroke-width="5" stroke-linecap="round"/>
+<rect x="86" y="120" width="28" height="36" rx="12" fill="#b98460"/>
+<path d="M46 102 C34 50 68 22 102 22 C138 22 168 54 156 104 C160 130 150 150 138 142 L62 142 C48 150 40 128 46 102Z" fill="#231512"/>
+<g fill="#231512"><circle cx="50" cy="126" r="13"/><circle cx="58" cy="146" r="12"/><circle cx="152" cy="126" r="13"/><circle cx="144" cy="146" r="12"/><circle cx="46" cy="102" r="12"/><circle cx="158" cy="102" r="12"/></g>
+<ellipse cx="101" cy="94" rx="38" ry="44" fill="#c4906b"/>
+<path d="M62 84 C64 48 92 38 102 42 C114 38 140 48 140 84 C128 64 114 58 102 60 C90 58 74 64 62 84Z" fill="#231512"/>
+<circle cx="64" cy="70" r="9" fill="#231512"/><circle cx="140" cy="70" r="9" fill="#231512"/>
+<path d="M73 80 Q82 75 92 79M110 79 Q120 75 129 80" fill="none" stroke="#231512" stroke-width="3" stroke-linecap="round"/>
+<circle cx="83" cy="93" r="14" fill="#fff" fill-opacity=".18" stroke="#7c3f1d" stroke-width="3.5"/><circle cx="120" cy="93" r="14" fill="#fff" fill-opacity=".18" stroke="#7c3f1d" stroke-width="3.5"/><path d="M96 91 Q101.500 86 107 91" fill="none" stroke="#7c3f1d" stroke-width="3"/>
+<circle cx="83" cy="94" r="3.800" fill="#2a1a14"/><circle cx="120" cy="94" r="3.800" fill="#2a1a14"/>
+<path d="M101 98 Q97 108 101 111" fill="none" stroke="#a8744f" stroke-width="2.500" stroke-linecap="round"/>
+<circle cx="74" cy="112" r="7" fill="#d9776a" fill-opacity=".3"/><circle cx="130" cy="112" r="7" fill="#d9776a" fill-opacity=".3"/>
+<path d="M80 116 Q101 140 123 116Z" fill="#fff" stroke="#b8566a" stroke-width="3" stroke-linejoin="round"/>
+</svg>
+<div><h3>Estefanía</h3><p class="note">Interprets, negotiates, decides.</p></div>
+</div>
+<ul>
+<li>Reads the commercial context behind a number: customers, promos, contracts.</li>
+<li>Negotiates price and terms with suppliers and agrees delivery dates.</li>
+<li>Weighs trade-offs between service level, cost and inventory.</li>
+<li>Aligns Supply, Commercial and Finance, and owns the final call.</li>
+</ul>
+</div>
+<div class="panel">
+<div class="who">
+<svg viewBox="0 0 200 200" role="img" aria-label="Illustration of her AI agent, a friendly robot wearing round glasses like hers">
+<rect width="200" height="200" fill="#1f4f57"/>
+<line x1="100" y1="34" x2="100" y2="58" stroke="#d9962b" stroke-width="5"/><circle cx="100" cy="30" r="9" fill="#d9962b"/>
+<rect x="44" y="58" width="112" height="90" rx="30" fill="#8fd0d6"/><rect x="56" y="70" width="88" height="66" rx="22" fill="#12343a"/>
+<circle cx="80" cy="97" r="15" fill="none" stroke="#d9962b" stroke-width="4"/><circle cx="120" cy="97" r="15" fill="none" stroke="#d9962b" stroke-width="4"/><path d="M95 95 Q100 90 105 95" fill="none" stroke="#d9962b" stroke-width="3.500"/>
+<circle cx="80" cy="97" r="5" fill="#8fd0d6"/><circle cx="120" cy="97" r="5" fill="#8fd0d6"/>
+<path d="M84 120 Q100 132 116 120" fill="none" stroke="#8fd0d6" stroke-width="4" stroke-linecap="round"/>
+<path d="M54 200 Q56 160 100 156 Q144 160 146 200Z" fill="#2b7a86"/>
+</svg>
+<div><h3>My agent</h3><p class="note">Refreshes, detects, simulates.</p></div>
+</div>
+<ul>
+<li>Pulls and cleans ERP and sales data every morning.</li>
+<li>Flags anomalies and forecast drift before they become surprises.</li>
+<li>Drafts forecast variants and runs what-if scenarios in the twin.</li>
+<li>Writes the weekly brief, ready for me to question and sharpen.</li>
+</ul>
+</div>
+</div>
+<div class="values">
+<div><h3>Share</h3><p class="note">I turn each insight into a short note the whole team can reuse.</p></div>
+<div><h3>Create</h3><p class="note">I build small tools, like this page, instead of waiting for them.</p></div>
+<div><h3>Inspire</h3><p class="note">I show the reasoning behind a number so others can improve it.</p></div>
+</div>
+</section>
+
+<section aria-labelledby="exp">
+<h2 id="exp">I’ve already planned demand, end to end</h2>
+<p class="lead" style="margin-top:.2rem">At Terra Nostra Organics, a wholesale trader of organic foods, I ran the full loop from customer order to supplier contract. In an agent-assisted team, each step gets faster.</p>
+<ol class="steps">
+<li><h3>Receive the customer purchase order</h3>I read quantities, delivery windows and terms for each customer.<span class="ag">With an agent: orders are parsed and checked automatically.</span></li>
+<li><h3>Enter it in the system</h3>I recorded every order in the ERP (Dynamics 365 Business Central).<span class="ag">With an agent: entry is drafted, I validate exceptions.</span></li>
+<li><h3>Pull ERP data with JetReports in Excel</h3>I built the report that showed which quantity was needed in which month.<span class="ag">With an agent: the monthly demand view refreshes itself.</span></li>
+<li><h3>Match the best supplier to each customer</h3>I compared suppliers by fit, capacity and delivery reliability.<span class="ag">With an agent: suppliers are scored, I choose.</span></li>
+<li><h3>Negotiate price and purchase terms</h3>I negotiated prices and terms, and negotiated freight volumes with forwarders to keep a steady rate and avoid fuel surcharges.<span class="ag">With an agent: benchmarks are ready before the call.</span></li>
+<li><h3>Write the supplier contract with dated orders</h3>Each purchase order had the date we needed it, so demand was covered on time.<span class="ag">With an agent: date risks are flagged early.</span></li>
+</ol>
+<p><b>Result in practice:</b> in the Mexico Supply Chain Project I secured fulfillment of customer demand for coconut syrup by buying and supplying raw material directly to Mexican suppliers facing shortages.</p>
+<dl>
+<dt>Consulting projects, ITESO</dt><dd>Grupo Requiez: compared four U.S. state markets, found Texas the most competitive entry market, and built an export business plan with Ex Works pricing, logistics and regulatory costs. Fire Hunters: built an import plan and a documented 13-step import process.</dd>
+<dt>Education</dt><dd>B.A. in Global Trade and Business, ITESO, GPA 9.7/10. Semester abroad at DHBW Ravensburg, Germany. Certificate of International and Intercultural Competencies (2026).</dd>
+<dt>Tools and languages</dt><dd>Dynamics 365 Business Central, JetReports and Excel, Sierra Interactive CRM. Fluent in Spanish and English.</dd>
+</dl>
+</section>
+
+<footer>
+<h2 style="font-size:1.3rem">Let’s talk</h2>
+<p><a href="mailto:ghfany421@gmail.com">ghfany421@gmail.com</a>, (+52) 33 2157 8909, <a href="https://www.linkedin.com/in/estefanigomez">linkedin.com/in/estefanigomez</a></p>
+<p class="note">Illustrative sketch with synthetic data. It is not Becle or Terra Nostra data.</p>
+</footer>
+</main>
+<script>
+var M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],B=[92,88,100,104,118,112,108,110,114,126,148,172],$=function(i){return document.getElementById(i)};
+function go(){
+var p=+$("p").value/100,h=+$("h").value/100,d=+$("d").value/100,D=[],C=[],tot=0,risk=0,bad=[];
+$("pv").textContent="+"+Math.round(p*100)+"%";$("hv").textContent=(h>0?"+":"")+Math.round(h*100)+"%";$("dv").textContent="−"+Math.round(d*100)+"%";
+B.forEach(function(v,i){var x=v;if(i==4||i==9||i==10)x*=1+p;if(i>=10)x*=1+h;var c=v*1.12*(i>=8?1-d:1),g=Math.max(0,x-c);D.push(x);C.push(c);tot+=x;risk+=g;if(g>0.5)bad.push(M[i]);});
+var s=function(v){return 222-v/240*200},w=49.6,o="";
+[0,60,120,180,240].forEach(function(t){o+='<line x1="36" x2="636" y1="'+s(t)+'" y2="'+s(t)+'" stroke="var(--line)"/><text x="30" y="'+(s(t)+4)+'" text-anchor="end">'+t+'</text>'});
+D.forEach(function(x,i){var cx=40+i*w+w/2,over=x>C[i]+0.5;o+='<rect class="bar'+(over?' gap':'')+'" x="'+(cx-15)+'" y="'+s(x)+'" width="30" height="'+(222-s(x))+'" rx="3"/><circle class="base" cx="'+cx+'" cy="'+s(B[i])+'" r="3"/><text x="'+cx+'" y="240" text-anchor="middle">'+M[i]+'</text>'});
+o+='<polyline class="cap" points="'+C.map(function(c,i){return(40+i*w+w/2)+","+s(c)}).join(" ")+'"/>';
+$("chart").innerHTML=o;
+$("k1").textContent=Math.round(tot);$("k2").textContent=Math.round(risk);$("k3").textContent=(100-risk/tot*100).toFixed(1)+"%";
+$("msg").textContent=bad.length?"Agent alert: about "+Math.round(risk)+"k cases are above the supply plan in "+bad.join(", ")+". Options drafted: pull supplier order dates earlier, reallocate across markets, or smooth the promo. I decide with Supply and Commercial.":"Agent: demand sits inside the supply plan in every month. Next idea: stress-test a bigger holiday swing.";
+}
+["p","h","d"].forEach(function(i){$(i).addEventListener("input",go)});go();
+</script>
+</body>
+</html>
